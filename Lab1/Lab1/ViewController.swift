@@ -25,9 +25,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func calculateBMI(_ sender: Button) {
-        if let height = Int(self.heightField.text!) {
-            if let weight = Int(self.weightField.text!) {
-                print("\(height + weight)")
+        if let height = Double(self.heightField.text!) {
+            if let weight = Double(self.weightField.text!) {
+                //String.localizedStringWithFormat("%.2f %@", value, unit)
+                print(height)
+                print(weight)
+                
+                let BMI = (weight / (height) / (height)) * 703
+                bmiField.text = String.localizedStringWithFormat("%.2f %@", BMI, "")
             }
             else {
                 bmiField.text = "Please enter a number!"
