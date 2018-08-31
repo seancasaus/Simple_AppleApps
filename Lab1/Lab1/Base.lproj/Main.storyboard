@@ -74,11 +74,19 @@
                                 <state key="normal" title="Calculate BMI">
                                     <color key="titleColor" red="0.065588932030000005" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="calculateBMI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypq-WP-3mT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="bmiField" destination="Ztd-jm-H1C" id="3sB-ab-ysN"/>
+                        <outlet property="heightField" destination="I3B-Th-jyk" id="9gA-Jj-0b5"/>
+                        <outlet property="weightField" destination="9Jp-oV-RGC" id="9Gy-Vd-jn5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
