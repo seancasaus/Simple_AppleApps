@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var heightField: UITextField!
     @IBOutlet weak var weightField: UITextField!
     @IBOutlet weak var bmiField: UILabel!
+    @IBOutlet weak var classificationField: UILabel!
     
     
     override func viewDidLoad() {
@@ -27,12 +28,21 @@ class ViewController: UIViewController {
     @IBAction func calculateBMI(_ sender: Button) {
         if let height = Double(self.heightField.text!) {
             if let weight = Double(self.weightField.text!) {
-                //String.localizedStringWithFormat("%.2f %@", value, unit)
                 print(height)
                 print(weight)
                 
                 let BMI = (weight / (height) / (height)) * 703
                 bmiField.text = String.localizedStringWithFormat("%.2f %@", BMI, "")
+                
+                if BMI < 18 {
+                    classificationField.text = "You are underweight"
+                }else if BMI >= 18 && BMI < 25 {
+                    classificationField.text = "You are normal"
+                }else if BMI >= 25 && BMI < 30 {
+                    classificationField.text = "You are pre-obese"
+                }else {
+                    classificationField.text = "You are obese"
+                }
             }
             else {
                 bmiField.text = "Please enter a number!"
