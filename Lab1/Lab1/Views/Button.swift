@@ -10,6 +10,7 @@ import UIKit
 
 class Button: UIButton {
 
+    //button styling
     override func awakeFromNib() {
         super.awakeFromNib()
         layer.borderWidth = 1.0
