@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14DE4923214C1C35000339F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DE4922214C1C35000339F4 /* AppDelegate.swift */; };
+		14DE4925214C1C35000339F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DE4924214C1C35000339F4 /* ViewController.swift */; };
+		14DE4928214C1C35000339F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DE4926214C1C35000339F4 /* Main.storyboard */; };
+		14DE492A214C1C37000339F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14DE4929214C1C37000339F4 /* Assets.xcassets */; };
+		14DE492D214C1C37000339F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14DE492B214C1C37000339F4 /* LaunchScreen.storyboard */; };
+		14DE4938214C1C37000339F4 /* Space_WalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DE4937214C1C37000339F4 /* Space_WalkTests.swift */; };
+		14DE4943214C1C37000339F4 /* Space_WalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DE4942214C1C37000339F4 /* Space_WalkUITests.swift */; };
+		14DE4953214C2B43000339F4 /* moonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DE4952214C2B43000339F4 /* moonVC.swift */; };
+		14DE4955214C2FD4000339F4 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DE4954214C2FD4000339F4 /* Button.swift */; };
+		14DE4957214C4E27000339F4 /* jupiterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14DE4956214C4E27000339F4 /* jupiterVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14DE4934214C1C37000339F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14DE4917214C1C34000339F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14DE491E214C1C35000339F4;
+			remoteInfo = "Space Walk";
+		};
+		14DE493F214C1C37000339F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 14DE4917214C1C34000339F4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14DE491E214C1C35000339F4;
+			remoteInfo = "Space Walk";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14DE491F214C1C35000339F4 /* Space Walk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Space Walk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DE4922214C1C35000339F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		14DE4924214C1C35000339F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		14DE4927214C1C35000339F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		14DE4929214C1C37000339F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14DE492C214C1C37000339F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		14DE492E214C1C37000339F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14DE4933214C1C37000339F4 /* Space WalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space WalkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DE4937214C1C37000339F4 /* Space_WalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space_WalkTests.swift; sourceTree = "<group>"; };
+		14DE4939214C1C37000339F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14DE493E214C1C37000339F4 /* Space WalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Space WalkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14DE4942214C1C37000339F4 /* Space_WalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space_WalkUITests.swift; sourceTree = "<group>"; };
+		14DE4944214C1C37000339F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14DE4952214C2B43000339F4 /* moonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moonVC.swift; sourceTree = "<group>"; };
+		14DE4954214C2FD4000339F4 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		14DE4956214C4E27000339F4 /* jupiterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jupiterVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		14DE491C214C1C35000339F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DE4930214C1C37000339F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DE493B214C1C37000339F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		14DE4916214C1C34000339F4 = {
+			isa = PBXGroup;
+			children = (
+				14DE4921214C1C35000339F4 /* Space Walk */,
+				14DE4936214C1C37000339F4 /* Space WalkTests */,
+				14DE4941214C1C37000339F4 /* Space WalkUITests */,
+				14DE4920214C1C35000339F4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		14DE4920214C1C35000339F4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				14DE491F214C1C35000339F4 /* Space Walk.app */,
+				14DE4933214C1C37000339F4 /* Space WalkTests.xctest */,
+				14DE493E214C1C37000339F4 /* Space WalkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		14DE4921214C1C35000339F4 /* Space Walk */ = {
+			isa = PBXGroup;
+			children = (
+				14DE4922214C1C35000339F4 /* AppDelegate.swift */,
+				14DE4924214C1C35000339F4 /* ViewController.swift */,
+				14DE4952214C2B43000339F4 /* moonVC.swift */,
+				14DE4956214C4E27000339F4 /* jupiterVC.swift */,
+				14DE4926214C1C35000339F4 /* Main.storyboard */,
+				14DE4929214C1C37000339F4 /* Assets.xcassets */,
+				14DE492B214C1C37000339F4 /* LaunchScreen.storyboard */,
+				14DE492E214C1C37000339F4 /* Info.plist */,
+				14DE4954214C2FD4000339F4 /* Button.swift */,
+			);
+			path = "Space Walk";
+			sourceTree = "<group>";
+		};
+		14DE4936214C1C37000339F4 /* Space WalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				14DE4937214C1C37000339F4 /* Space_WalkTests.swift */,
+				14DE4939214C1C37000339F4 /* Info.plist */,
+			);
+			path = "Space WalkTests";
+			sourceTree = "<group>";
+		};
+		14DE4941214C1C37000339F4 /* Space WalkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				14DE4942214C1C37000339F4 /* Space_WalkUITests.swift */,
+				14DE4944214C1C37000339F4 /* Info.plist */,
+			);
+			path = "Space WalkUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		14DE491E214C1C35000339F4 /* Space Walk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14DE4947214C1C37000339F4 /* Build configuration list for PBXNativeTarget "Space Walk" */;
+			buildPhases = (
+				14DE491B214C1C35000339F4 /* Sources */,
+				14DE491C214C1C35000339F4 /* Frameworks */,
+				14DE491D214C1C35000339F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Space Walk";
+			productName = "Space Walk";
+			productReference = 14DE491F214C1C35000339F4 /* Space Walk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14DE4932214C1C37000339F4 /* Space WalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14DE494A214C1C37000339F4 /* Build configuration list for PBXNativeTarget "Space WalkTests" */;
+			buildPhases = (
+				14DE492F214C1C37000339F4 /* Sources */,
+				14DE4930214C1C37000339F4 /* Frameworks */,
+				14DE4931214C1C37000339F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14DE4935214C1C37000339F4 /* PBXTargetDependency */,
+			);
+			name = "Space WalkTests";
+			productName = "Space WalkTests";
+			productReference = 14DE4933214C1C37000339F4 /* Space WalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		14DE493D214C1C37000339F4 /* Space WalkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14DE494D214C1C37000339F4 /* Build configuration list for PBXNativeTarget "Space WalkUITests" */;
+			buildPhases = (
+				14DE493A214C1C37000339F4 /* Sources */,
+				14DE493B214C1C37000339F4 /* Frameworks */,
+				14DE493C214C1C37000339F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14DE4940214C1C37000339F4 /* PBXTargetDependency */,
+			);
+			name = "Space WalkUITests";
+			productName = "Space WalkUITests";
+			productReference = 14DE493E214C1C37000339F4 /* Space WalkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		14DE4917214C1C34000339F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Sean Casaus";
+				TargetAttributes = {
+					14DE491E214C1C35000339F4 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					14DE4932214C1C37000339F4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 14DE491E214C1C35000339F4;
+					};
+					14DE493D214C1C37000339F4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 14DE491E214C1C35000339F4;
+					};
+				};
+			};
+			buildConfigurationList = 14DE491A214C1C34000339F4 /* Build configuration list for PBXProject "Space Walk" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 14DE4916214C1C34000339F4;
+			productRefGroup = 14DE4920214C1C35000339F4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				14DE491E214C1C35000339F4 /* Space Walk */,
+				14DE4932214C1C37000339F4 /* Space WalkTests */,
+				14DE493D214C1C37000339F4 /* Space WalkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		14DE491D214C1C35000339F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DE492D214C1C37000339F4 /* LaunchScreen.storyboard in Resources */,
+				14DE492A214C1C37000339F4 /* Assets.xcassets in Resources */,
+				14DE4928214C1C35000339F4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DE4931214C1C37000339F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DE493C214C1C37000339F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		14DE491B214C1C35000339F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DE4957214C4E27000339F4 /* jupiterVC.swift in Sources */,
+				14DE4925214C1C35000339F4 /* ViewController.swift in Sources */,
+				14DE4953214C2B43000339F4 /* moonVC.swift in Sources */,
+				14DE4923214C1C35000339F4 /* AppDelegate.swift in Sources */,
+				14DE4955214C2FD4000339F4 /* Button.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DE492F214C1C37000339F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DE4938214C1C37000339F4 /* Space_WalkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14DE493A214C1C37000339F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14DE4943214C1C37000339F4 /* Space_WalkUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14DE4935214C1C37000339F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14DE491E214C1C35000339F4 /* Space Walk */;
+			targetProxy = 14DE4934214C1C37000339F4 /* PBXContainerItemProxy */;
+		};
+		14DE4940214C1C37000339F4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14DE491E214C1C35000339F4 /* Space Walk */;
+			targetProxy = 14DE493F214C1C37000339F4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		14DE4926214C1C35000339F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14DE4927214C1C35000339F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14DE492B214C1C37000339F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14DE492C214C1C37000339F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		14DE4945214C1C37000339F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		14DE4946214C1C37000339F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		14DE4948214C1C37000339F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Space Walk/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seancasaus.Space-Walk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		14DE4949214C1C37000339F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Space Walk/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seancasaus.Space-Walk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		14DE494B214C1C37000339F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Space WalkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seancasaus.Space-WalkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space Walk.app/Space Walk";
+			};
+			name = Debug;
+		};
+		14DE494C214C1C37000339F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Space WalkTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seancasaus.Space-WalkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Space Walk.app/Space Walk";
+			};
+			name = Release;
+		};
+		14DE494E214C1C37000339F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Space WalkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seancasaus.Space-WalkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Space Walk";
+			};
+			name = Debug;
+		};
+		14DE494F214C1C37000339F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Space WalkUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.seancasaus.Space-WalkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Space Walk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14DE491A214C1C34000339F4 /* Build configuration list for PBXProject "Space Walk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DE4945214C1C37000339F4 /* Debug */,
+				14DE4946214C1C37000339F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14DE4947214C1C37000339F4 /* Build configuration list for PBXNativeTarget "Space Walk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DE4948214C1C37000339F4 /* Debug */,
+				14DE4949214C1C37000339F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14DE494A214C1C37000339F4 /* Build configuration list for PBXNativeTarget "Space WalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DE494B214C1C37000339F4 /* Debug */,
+				14DE494C214C1C37000339F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14DE494D214C1C37000339F4 /* Build configuration list for PBXNativeTarget "Space WalkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14DE494E214C1C37000339F4 /* Debug */,
+				14DE494F214C1C37000339F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 14DE4917214C1C34000339F4 /* Project object */;
+}
