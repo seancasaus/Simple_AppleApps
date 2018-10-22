@@ -27,6 +27,24 @@ class ViewController: UITableViewController {
         return cell
     }
     
+    @IBAction func addCity(_ sender: Any) {
+        let addAlertController = UIAlertController(title: "Add City", message: "", preferredStyle: .alert)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in }
+        addAlertController.addAction(cancelAction)
+        
+        addAlertController.addTextField { (textField) in
+            textField.placeholder = "Enter city name here"
+            textField.keyboardType = .default
+        }
+        addAlertController.addTextField { (textField) in
+            textField.placeholder = "Description here"
+            textField.keyboardType = .default
+        }
+        
+        self.present(addAlertController, animated: true, completion: nil)
+    }
+    
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         citys.deleteCity(x: indexPath.row)
         tableView.reloadData()

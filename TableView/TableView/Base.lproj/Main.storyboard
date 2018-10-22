@@ -36,11 +36,29 @@
                             <outlet property="delegate" destination="tJk-iq-1tH" id="jo6-v2-MTO"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Citys" id="Mpe-uT-ndB"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Citys" id="Mpe-uT-ndB">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="7ra-4o-FkO">
+                            <connections>
+                                <action selector="addCity:" destination="tJk-iq-1tH" id="99V-b8-HuM"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="tiX-Pd-uI8">
+                            <segmentedControl key="customView" opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="YOu-0I-2QO">
+                                <rect key="frame" x="236" y="7" width="123" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Camera"/>
+                                    <segment title="Library"/>
+                                </segments>
+                            </segmentedControl>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MIz-Hg-cCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1027" y="165"/>
+            <point key="canvasLocation" x="1026.4000000000001" y="164.16791604197903"/>
         </scene>
         <!--City Controller-->
         <scene sceneID="O38-Vy-vl6">
