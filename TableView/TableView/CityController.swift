@@ -18,7 +18,9 @@ class CityController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        titleView.text = citys?.cityArray[i!].title
+        descView.text = citys?.cityArray[i!].description
+        imageView.image = citys?.cityArray[i!].image
         
         // Do any additional setup after loading the view.
     }
