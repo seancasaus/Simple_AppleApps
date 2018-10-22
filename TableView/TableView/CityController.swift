@@ -13,6 +13,9 @@ class CityController: UIViewController {
     @IBOutlet weak var descView: UILabel!
     @IBOutlet weak var titleView: UILabel!
     
+    var i:Int?
+    var citys:Model?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

@@ -26,4 +26,19 @@ class ViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        citys.deleteCity(x: indexPath.row)
+        tableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let selectedIndex: IndexPath = tableView.indexPath(for: sender as! UITableViewCell)!
+        if(segue.identifier == "toCityController") {
+            if let destination: CityController = segue.destination as? CityController {
+                destination.i = selectedIndex.row
+                destination.citys = self.citys
+            }
+        }
+    }
 }
