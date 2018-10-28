@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RhT-9C-ann">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RhT-9C-ann">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -69,50 +69,76 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dVw-rO-O3U">
-                                <rect key="frame" x="0.0" y="64" width="375" height="253"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="153"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="253" id="Myb-CE-cER"/>
-                                    <constraint firstAttribute="width" constant="375" id="uZZ-12-wa7"/>
+                                    <constraint firstAttribute="height" constant="153" id="CgS-ox-zXU"/>
+                                    <constraint firstAttribute="width" constant="375" id="c6O-rC-271"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tmJ-Yc-fw7">
-                                <rect key="frame" x="102" y="351" width="170" height="44"/>
+                                <rect key="frame" x="102" y="222" width="170" height="44"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ssadsadsadsadasdsadasdasdasdsadsadasdasdsaddasdasdsadsadsadsadsaddfsdfsdfdsfsdfdsfdsfdsfdsfsdfdsfdsfsdfdsfd" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3p2-L1-GGj">
-                                <rect key="frame" x="16" y="403" width="343" height="66"/>
+                                <rect key="frame" x="16" y="274" width="343" height="66"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tTO-WV-MbQ">
+                                <rect key="frame" x="0.0" y="446" width="375" height="177"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="177" id="Eda-be-Cc1"/>
+                                    <constraint firstAttribute="width" constant="375" id="ySL-LO-1dS"/>
+                                </constraints>
+                            </mapView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3wX-mw-lOW">
+                                <rect key="frame" x="67" y="418" width="241" height="29"/>
+                                <segments>
+                                    <segment title="standard"/>
+                                    <segment title="satellite"/>
+                                </segments>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="ljc-LT-erV" firstAttribute="trailing" secondItem="3wX-mw-lOW" secondAttribute="trailing" constant="67" id="3cA-Ki-Njs"/>
                             <constraint firstItem="dVw-rO-O3U" firstAttribute="top" secondItem="ljc-LT-erV" secondAttribute="top" id="724-fB-dv9"/>
+                            <constraint firstItem="3wX-mw-lOW" firstAttribute="leading" secondItem="ljc-LT-erV" secondAttribute="leading" constant="67" id="9Yd-kH-CeK"/>
                             <constraint firstItem="tmJ-Yc-fw7" firstAttribute="leading" secondItem="ljc-LT-erV" secondAttribute="leading" constant="102" id="Av2-hX-Hbj"/>
+                            <constraint firstItem="tTO-WV-MbQ" firstAttribute="top" secondItem="3wX-mw-lOW" secondAttribute="bottom" id="EeB-w5-xNz"/>
+                            <constraint firstItem="ljc-LT-erV" firstAttribute="trailing" secondItem="3wX-mw-lOW" secondAttribute="trailing" constant="67" id="IzJ-KB-L3N"/>
+                            <constraint firstItem="tTO-WV-MbQ" firstAttribute="trailing" secondItem="ljc-LT-erV" secondAttribute="trailing" id="KQ1-NQ-Yry"/>
                             <constraint firstItem="ljc-LT-erV" firstAttribute="trailing" secondItem="tmJ-Yc-fw7" secondAttribute="trailing" constant="103" id="Kp3-eA-yFn"/>
-                            <constraint firstItem="tmJ-Yc-fw7" firstAttribute="top" secondItem="dVw-rO-O3U" secondAttribute="bottom" constant="34" id="O9b-3H-der"/>
+                            <constraint firstItem="tmJ-Yc-fw7" firstAttribute="top" secondItem="dVw-rO-O3U" secondAttribute="bottom" constant="5" id="OYi-p7-dfT"/>
                             <constraint firstItem="dVw-rO-O3U" firstAttribute="trailing" secondItem="ljc-LT-erV" secondAttribute="trailing" id="QWd-r0-8bO"/>
                             <constraint firstItem="3p2-L1-GGj" firstAttribute="top" secondItem="tmJ-Yc-fw7" secondAttribute="bottom" constant="8" id="Rjo-0h-jot"/>
-                            <constraint firstItem="tmJ-Yc-fw7" firstAttribute="top" secondItem="dVw-rO-O3U" secondAttribute="bottom" constant="34" id="SC1-h0-KlJ"/>
                             <constraint firstItem="3p2-L1-GGj" firstAttribute="top" secondItem="tmJ-Yc-fw7" secondAttribute="bottom" constant="8" id="ZnS-xn-wbW"/>
                             <constraint firstItem="dVw-rO-O3U" firstAttribute="leading" secondItem="ljc-LT-erV" secondAttribute="leading" id="aWl-bR-6jJ"/>
                             <constraint firstItem="3p2-L1-GGj" firstAttribute="leading" secondItem="ljc-LT-erV" secondAttribute="leading" constant="16" id="fHb-Zs-vZ1"/>
+                            <constraint firstItem="tTO-WV-MbQ" firstAttribute="top" secondItem="3wX-mw-lOW" secondAttribute="bottom" id="mIO-sb-TYw"/>
+                            <constraint firstItem="3wX-mw-lOW" firstAttribute="leading" secondItem="ljc-LT-erV" secondAttribute="leading" constant="67" id="mfT-Ja-en8"/>
+                            <constraint firstItem="tTO-WV-MbQ" firstAttribute="bottom" secondItem="ljc-LT-erV" secondAttribute="bottom" id="qdT-G6-87c"/>
+                            <constraint firstItem="tTO-WV-MbQ" firstAttribute="leading" secondItem="ljc-LT-erV" secondAttribute="leading" id="xFf-nZ-IDL"/>
                             <constraint firstItem="ljc-LT-erV" firstAttribute="trailing" secondItem="3p2-L1-GGj" secondAttribute="trailing" constant="16" id="yiN-aq-HbL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ljc-LT-erV"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="descView" destination="3p2-L1-GGj" id="OAg-eX-GtL"/>
                         <outlet property="imageView" destination="dVw-rO-O3U" id="Bft-gK-bFX"/>
+                        <outlet property="map" destination="tTO-WV-MbQ" id="EdW-cY-HmK"/>
+                        <outlet property="mapType" destination="3wX-mw-lOW" id="ACM-bG-zfh"/>
                         <outlet property="titleView" destination="tmJ-Yc-fw7" id="Zao-lh-brs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SMb-a4-Olf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1940" y="150"/>
+            <point key="canvasLocation" x="1940" y="149.77511244377811"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Tt-2g-yUT">
