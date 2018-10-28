@@ -29,17 +29,18 @@ class CityController: UIViewController {
     }
     
     @IBAction func showMap(_ sender: Any) {
+        //print("Inside Show Map Function");
         
         switch(mapType.selectedSegmentIndex)
         {
-        case 0:
-            map.mapType = MKMapType.standard
+            case 0:
+                map.mapType = MKMapType.standard
             
-        case 1:
-            map.mapType = MKMapType.satellite
+            case 1:
+                map.mapType = MKMapType.satellite
             
-        default:
-            map.mapType = MKMapType.standard
+            default:
+                map.mapType = MKMapType.standard
         }
         
         // display the map

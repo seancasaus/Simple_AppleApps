@@ -100,6 +100,9 @@
                                     <segment title="standard"/>
                                     <segment title="satellite"/>
                                 </segments>
+                                <connections>
+                                    <action selector="showMap:" destination="5yR-Lb-0FY" eventType="valueChanged" id="Xce-20-u3b"/>
+                                </connections>
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
