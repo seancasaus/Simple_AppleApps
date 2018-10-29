@@ -76,6 +76,29 @@ class CityController: UIViewController {
     }
     
     @IBAction func search(_ sender: UIButton) {
-
+        if(!searchField.text!.isEmpty) {
+            let request = MKLocalSearchRequest()
+            request.naturalLanguageQuery = searchField.text
+            request.region = map.region
+            let search = MKLocalSearch(request: request)
+            
+            search.start { response, _ in
+                guard let response = response else {
+                    return
+                }
+                print( response.mapItems )
+                var matchingItems:[MKMapItem] = []
+                matchingItems = response.mapItems
+                for i in 1...matchingItems.count - 1
+                {
+                    let place = matchingItems[i].placemark
+                    let marker = MKPointAnnotation()
+                    marker.coordinate = (place.location?.coordinate)!
+                    marker.title = place.name
+                    self.map.addAnnotation(marker)
+                }
+                // self.tableView.reloadData()
+            }
+        }
     }
 }
