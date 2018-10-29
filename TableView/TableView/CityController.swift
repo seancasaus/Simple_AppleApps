@@ -15,6 +15,7 @@ class CityController: UIViewController {
     @IBOutlet weak var titleView: UILabel!
     @IBOutlet weak var map: MKMapView!
     @IBOutlet weak var mapType: UISegmentedControl!
+    @IBOutlet weak var searchField: UITextField!
     
     var i:Int?
     var citys:Model?
@@ -28,33 +29,22 @@ class CityController: UIViewController {
         descView.text = citys?.cityArray[i!].description
         imageView.image = citys?.cityArray[i!].image
         let addressString = citys?.cityArray[i!].title
+        //showMap(self)
         
         CLGeocoder().geocodeAddressString(addressString!, completionHandler:
         {(placemarks, error) in
                 
             if error != nil {
                 print("Geocode failed: \(error!.localizedDescription)")
-            } else if placemarks!.count > 0 {
+            } else {
                 let placemark = placemarks![0]
                 let location = placemark.location
                 let coords = location!.coordinate
                 self.lon = coords.longitude
                 self.lat = coords.latitude
-                print(location!)
-                
-                let span = MKCoordinateSpanMake(0.05, 0.05)
-                let region = MKCoordinateRegion(center: placemark.location!.coordinate, span: span)
-                self.map.setRegion(region, animated: true)
-                let ani = MKPointAnnotation()
-                ani.coordinate = placemark.location!.coordinate
-                ani.title = placemark.locality
-                ani.subtitle = placemark.subLocality
-                
-                self.map.addAnnotation(ani)
+                self.showMap(self)
             }
         })
-
-        
         // Do any additional setup after loading the view.
     }
     
@@ -65,26 +55,16 @@ class CityController: UIViewController {
         {
             case 0:
                 map.mapType = MKMapType.standard
-            
             case 1:
                 map.mapType = MKMapType.satellite
-            
             default:
                 map.mapType = MKMapType.standard
         }
         
         // display the map
-        
-        if lon == 0 || lat == 0 {
-            self.lon = -112.06
-            self.lat = 33.45
-        }
-
         let coordinates = CLLocationCoordinate2D( latitude: lat, longitude: lon)
         let span: MKCoordinateSpan = MKCoordinateSpanMake(0.01, 0.01)
-
         let region: MKCoordinateRegion = MKCoordinateRegionMake(coordinates, span)
-
         self.map.setRegion(region, animated: true)
 
         // add an annotation
@@ -93,6 +73,9 @@ class CityController: UIViewController {
         annotation.title = titleView.text
 
         self.map.addAnnotation(annotation)
-        
+    }
+    
+    @IBAction func search(_ sender: UIButton) {
+
     }
 }

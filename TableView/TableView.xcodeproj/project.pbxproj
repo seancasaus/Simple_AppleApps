@@ -15,6 +15,7 @@
 		14A0B8F0215F0C9100EFE6A1 /* TableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0B8EF215F0C9100EFE6A1 /* TableViewTests.swift */; };
 		14A0B8FB215F0C9100EFE6A1 /* TableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0B8FA215F0C9100EFE6A1 /* TableViewUITests.swift */; };
 		14A0B90D215F1DE300EFE6A1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A0B90C215F1DE300EFE6A1 /* Model.swift */; };
+		14AEE7702186A85000305C77 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AEE76F2186A84F00305C77 /* Button.swift */; };
 		14E2EBDB217D723E0012A32E /* CityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E2EBDA217D723E0012A32E /* CityController.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +51,7 @@
 		14A0B8FA215F0C9100EFE6A1 /* TableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewUITests.swift; sourceTree = "<group>"; };
 		14A0B8FC215F0C9100EFE6A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14A0B90C215F1DE300EFE6A1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		14AEE76F2186A84F00305C77 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		14E2EBDA217D723E0012A32E /* CityController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				14A0B8DA215F0C8E00EFE6A1 /* AppDelegate.swift */,
+				14AEE76F2186A84F00305C77 /* Button.swift */,
 				14A0B8DC215F0C8E00EFE6A1 /* ViewController.swift */,
 				14E2EBDA217D723E0012A32E /* CityController.swift */,
 				14A0B90C215F1DE300EFE6A1 /* Model.swift */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14AEE7702186A85000305C77 /* Button.swift in Sources */,
 				14E2EBDB217D723E0012A32E /* CityController.swift in Sources */,
 				14A0B8DD215F0C8E00EFE6A1 /* ViewController.swift in Sources */,
 				14A0B8DB215F0C8E00EFE6A1 /* AppDelegate.swift in Sources */,
