@@ -89,15 +89,13 @@ class CityController: UIViewController {
                 print( response.mapItems )
                 var matchingItems:[MKMapItem] = []
                 matchingItems = response.mapItems
-                for i in 1...matchingItems.count - 1
-                {
+                for i in 1...matchingItems.count - 1 {
                     let place = matchingItems[i].placemark
                     let marker = MKPointAnnotation()
                     marker.coordinate = (place.location?.coordinate)!
                     marker.title = place.name
                     self.map.addAnnotation(marker)
                 }
-                // self.tableView.reloadData()
             }
         }
     }
