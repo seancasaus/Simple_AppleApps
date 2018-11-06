@@ -53,6 +53,14 @@ class ViewController: UIViewController {
                         else {
                             let jsonResult = (try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers)) as! NSDictionary
                             print(jsonResult)
+                            let setOne:NSArray = jsonResult["earthquakes"] as! NSArray
+                            print(setOne);
+                            let y = setOne[0] as? [String: AnyObject]
+                            print(y!["datetime"]!)
+                            print(y!["magnitude"]!)
+
+                            self.dateLabel.text = y!["datetime"]! as? String
+                            self.magLabel.text = String(format:"%.2f", (y!["magnitude"]! as? Double)!)
                         }
                     })
                     jsonQuery.resume()
