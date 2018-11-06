@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     var lon : CLLocationDegrees = 0
     var lat : CLLocationDegrees = 0
     
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var magLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -36,17 +39,27 @@ class ViewController: UIViewController {
                     let east = self.lon - 10
                     let west = self.lon + 10
                     let urlAsString = "http://api.geonames.org/earthquakesJSON?north="+String(format:"%f", north)+"&south="+String(format:"%f", south)+"&east="+String(format:"%f", east)+"&west="+String(format:"%f", west)+"&username=demo"
-                    print("\(north) \(south) \(east) \(west)");
+//                    print("\(north) \(south) \(east) \(west)");
+//                    print(urlAsString);
+                    
                     print(urlAsString);
+                    
+                    let url = URL(string: urlAsString)!
+                    let urlSession = URLSession.shared
+                    let jsonQuery = urlSession.dataTask(with: url, completionHandler: { data, response, error -> Void in
+                        if (error != nil) {
+                            print(error!.localizedDescription)
+                        }
+                        else {
+                            let jsonResult = (try! JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableContainers)) as! NSDictionary
+                            print(jsonResult)
+                        }
+                    })
+                    jsonQuery.resume()
                 }
         })
-        
     }
-    
-    
-    
-    
-
-
 }
+
+
 

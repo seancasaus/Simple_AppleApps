@@ -31,27 +31,65 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCf-ti-4Wg">
-                                <rect key="frame" x="80" y="275" width="201" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Most Powerful Earthquake:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bCf-ti-4Wg">
+                                <rect key="frame" x="15" y="195" width="206" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hst-mD-R6U">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hst-mD-R6U">
                                 <rect key="frame" x="163" y="149" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="getInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z78-uH-tu2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cMt-iZ-wi1">
+                                <rect key="frame" x="35" y="244" width="45" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Magnitude:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBL-37-7eK">
+                                <rect key="frame" x="35" y="287" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="crC-5x-Omf">
+                                <rect key="frame" x="82" y="244" width="210" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDa-ZD-fEv">
+                                <rect key="frame" x="146" y="287" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uDa-ZD-fEv" firstAttribute="top" secondItem="crC-5x-Omf" secondAttribute="bottom" constant="22" id="9uR-db-FTc"/>
+                            <constraint firstItem="crC-5x-Omf" firstAttribute="leading" secondItem="cMt-iZ-wi1" secondAttribute="trailing" constant="2" id="HOh-T8-cuK"/>
+                            <constraint firstItem="bCf-ti-4Wg" firstAttribute="top" secondItem="hst-mD-R6U" secondAttribute="bottom" constant="15" id="UUE-oY-YDy"/>
+                            <constraint firstItem="oBL-37-7eK" firstAttribute="top" secondItem="cMt-iZ-wi1" secondAttribute="bottom" constant="20" id="WCq-Sp-kPs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uDa-ZD-fEv" secondAttribute="trailing" constant="146" id="diN-k9-h1n"/>
+                            <constraint firstItem="crC-5x-Omf" firstAttribute="top" secondItem="bCf-ti-4Wg" secondAttribute="bottom" constant="28" id="duI-3J-rBd"/>
+                            <constraint firstItem="cMt-iZ-wi1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="jiO-PY-Wro"/>
+                            <constraint firstItem="uDa-ZD-fEv" firstAttribute="leading" secondItem="oBL-37-7eK" secondAttribute="trailing" constant="24" id="kE4-P3-5U5"/>
+                            <constraint firstItem="cMt-iZ-wi1" firstAttribute="top" secondItem="bCf-ti-4Wg" secondAttribute="bottom" constant="30" id="l5X-MU-aI5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="crC-5x-Omf" secondAttribute="trailing" constant="83" id="qq2-Io-1Da"/>
+                            <constraint firstItem="oBL-37-7eK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="sTf-Kf-CPR"/>
+                            <constraint firstItem="bCf-ti-4Wg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="vBO-rw-y5j"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="cityName" destination="GH6-yo-M2X" id="OkT-Ne-hcc"/>
+                        <outlet property="dateLabel" destination="crC-5x-Omf" id="DUT-U8-cJF"/>
+                        <outlet property="magLabel" destination="uDa-ZD-fEv" id="h1H-71-J5W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
