@@ -33,7 +33,7 @@ class CityController: UIViewController {
         
         CLGeocoder().geocodeAddressString(addressString!, completionHandler:
         {(placemarks, error) in
-                
+            
             if error != nil {
                 print("Geocode failed: \(error!.localizedDescription)")
             } else {

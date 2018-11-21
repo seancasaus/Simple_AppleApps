@@ -59,8 +59,10 @@ class ViewController: UIViewController {
                             print(y!["datetime"]!)
                             print(y!["magnitude"]!)
 
-                            self.dateLabel.text = y!["datetime"]! as? String
-                            self.magLabel.text = String(format:"%.2f", (y!["magnitude"]! as? Double)!)
+                            DispatchQueue.main.async {
+                                self.dateLabel.text = y!["datetime"]! as? String
+                                self.magLabel.text = String(format:"%.2f", (y!["magnitude"]! as? Double)!)
+                            }
                         }
                     })
                     jsonQuery.resume()
