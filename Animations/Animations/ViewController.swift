@@ -17,14 +17,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var winLabel: UILabel!
     
-    var timer : Timer?
+    var timer : Timer? = Timer();
     var counter: Float  = 0.0
-    var didWin: Bool = false
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        timer = Timer();
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(ViewController.count), userInfo: nil, repeats: true)
     }
 
@@ -46,11 +44,7 @@ class ViewController: UIViewController {
             self.apple4.isHidden = true
         }
         if (counter <= 10.0 && apple1.isHidden == true && apple2.isHidden == true && apple3.isHidden == true && apple4.isHidden == true) {
-            didWin = true
             winLabel.text = "You Won"
-        }
-        if (counter > 10.0 && didWin == false) {
-            winLabel.text = "You Lose"
         }
     }
     @IBAction func rightButton(_ sender: UIButton) {
@@ -71,11 +65,7 @@ class ViewController: UIViewController {
             self.apple4.isHidden = true
         }
         if (counter <= 10.0 && apple1.isHidden == true && apple2.isHidden == true && apple3.isHidden == true && apple4.isHidden == true) {
-            didWin = true
             winLabel.text = "You Won"
-        }
-        if (counter > 10.0 && didWin == false) {
-            winLabel.text = "You Lose"
         }
     }
     @IBAction func downButton(_ sender: UIButton) {
@@ -96,11 +86,7 @@ class ViewController: UIViewController {
             self.apple4.isHidden = true
         }
         if (counter <= 10.0 && apple1.isHidden == true && apple2.isHidden == true && apple3.isHidden == true && apple4.isHidden == true) {
-            didWin = true
             winLabel.text = "You Won"
-        }
-        if (counter > 10.0 && didWin == false) {
-            winLabel.text = "You Lose"
         }
     }
     @IBAction func leftButton(_ sender: UIButton) {
@@ -121,11 +107,7 @@ class ViewController: UIViewController {
             self.apple4.isHidden = true
         }
         if (counter <= 10.0 && apple1.isHidden == true && apple2.isHidden == true && apple3.isHidden == true && apple4.isHidden == true) {
-            didWin = true
             winLabel.text = "You Won"
-        }
-        if (counter > 10.0 && didWin == false) {
-            winLabel.text = "You Lose"
         }
     }
     
@@ -135,7 +117,18 @@ class ViewController: UIViewController {
     
     @objc func count() {
         counter = counter + 0.1
-        timerLabel.text  = String(format: "%.01f", counter)
+        if counter > 10.1 {
+            timer!.invalidate()
+            timer = nil
+            if (apple1.isHidden == true && apple2.isHidden == true && apple3.isHidden == true && apple4.isHidden == true) {
+                winLabel.text = "You Won"
+            }
+            else {
+                winLabel.text = "You Lose"
+            }
+        } else {
+            timerLabel.text  = String(format: "%.01f", counter)
+        }
     }
 }
 
