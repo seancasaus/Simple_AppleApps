@@ -17,12 +17,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     
     var timer : Timer?
-    var counter  = 0
+    var counter: Float  = 0.0
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         timer = Timer();
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(ViewController.count), userInfo: nil, repeats: true)
         
     }
 
@@ -103,9 +104,9 @@ class ViewController: UIViewController {
         return first_View.frame.intersects(second_View.frame)
     }
     
-    func count() {
-        counter = counter + 1
-        timerVal.text  = String( counter)
+    @objc func count() {
+        counter = counter + 0.1
+        timerLabel.text  = String(format: "%.01f", counter)
     }
 }
 
