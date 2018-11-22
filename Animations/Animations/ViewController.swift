@@ -15,16 +15,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var apple3: UILabel!
     @IBOutlet weak var apple4: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var winLabel: UILabel!
     
     var timer : Timer?
     var counter: Float  = 0.0
+    var didWin: Bool = false
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         timer = Timer();
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(ViewController.count), userInfo: nil, repeats: true)
-        
     }
 
     @IBAction func upButton(_ sender: UIButton) {
@@ -44,6 +45,13 @@ class ViewController: UIViewController {
         if(viewIntersectsView(monkey, second_View: apple4)) {
             self.apple4.isHidden = true
         }
+        if (counter <= 10.0 && apple1.isHidden == true && apple2.isHidden == true && apple3.isHidden == true && apple4.isHidden == true) {
+            didWin = true
+            winLabel.text = "You Won"
+        }
+        if (counter > 10.0 && didWin == false) {
+            winLabel.text = "You Lose"
+        }
     }
     @IBAction func rightButton(_ sender: UIButton) {
         var frame  = self.monkey.frame
@@ -61,6 +69,13 @@ class ViewController: UIViewController {
         }
         if(viewIntersectsView(monkey, second_View: apple4)) {
             self.apple4.isHidden = true
+        }
+        if (counter <= 10.0 && apple1.isHidden == true && apple2.isHidden == true && apple3.isHidden == true && apple4.isHidden == true) {
+            didWin = true
+            winLabel.text = "You Won"
+        }
+        if (counter > 10.0 && didWin == false) {
+            winLabel.text = "You Lose"
         }
     }
     @IBAction func downButton(_ sender: UIButton) {
@@ -80,6 +95,13 @@ class ViewController: UIViewController {
         if(viewIntersectsView(monkey, second_View: apple4)) {
             self.apple4.isHidden = true
         }
+        if (counter <= 10.0 && apple1.isHidden == true && apple2.isHidden == true && apple3.isHidden == true && apple4.isHidden == true) {
+            didWin = true
+            winLabel.text = "You Won"
+        }
+        if (counter > 10.0 && didWin == false) {
+            winLabel.text = "You Lose"
+        }
     }
     @IBAction func leftButton(_ sender: UIButton) {
         var frame  = self.monkey.frame
@@ -97,6 +119,13 @@ class ViewController: UIViewController {
         }
         if(viewIntersectsView(monkey, second_View: apple4)) {
             self.apple4.isHidden = true
+        }
+        if (counter <= 10.0 && apple1.isHidden == true && apple2.isHidden == true && apple3.isHidden == true && apple4.isHidden == true) {
+            didWin = true
+            winLabel.text = "You Won"
+        }
+        if (counter > 10.0 && didWin == false) {
+            winLabel.text = "You Lose"
         }
     }
     
